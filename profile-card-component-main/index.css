@@ -1,0 +1,111 @@
+body{
+    background-color: hsl(185, 75%, 39%); 
+}
+
+p, h2{
+    font-family: 'Kumbh Sans', sans-serif;
+ 
+}
+
+span{
+    color:rgb(110,110,123);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+
+hr{
+    border: 0;
+    width: 100%;               
+    background-color:rgb(110,110,123);
+    height: 1px;
+    opacity: 15%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTop{
+    border-radius: 10px 10px 0 0;
+}
+
+.profileImage{
+    position:absolute;
+    border-radius:50%;
+    width:100px;
+    height:auto;
+    border:5px white solid;
+    margin-top:80px;
+}
+
+
+.whiteSquare{
+    background-color: white;
+    width: 350px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.mainInfo{
+    margin-bottom: 30px;
+}
+
+.mainInfoParagraph{
+    margin-top:75px;
+    font-weight: 800;
+    color:#2D3248
+}
+
+.londonSpan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span26{
+    font-weight: 700;
+}
+
+.metaData{
+    display: flex;
+}
+
+.mainNumber{
+    height:0px;
+    font-weight: 700;
+    font-size: 20px;
+    color:#2D3248;
+}
+
+.subNumber{
+    height:0px;
+    font-size:12px;
+    color:rgb(110,110,123);
+    text-align: center;
+}
+
+.metaDataItem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 15px 20px;
+}
+
+.photos{
+    justify-content: center;
+}
