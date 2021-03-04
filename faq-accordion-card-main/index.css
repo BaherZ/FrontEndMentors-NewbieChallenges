@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)) ;
+    height:100vh;
+}
+
+.attribution{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    height:60%;
+    width:50%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.womanImage{
+    width: 400px;
+    left:-3rem;
+    position: relative;
+    object-fit: contain;
+}
