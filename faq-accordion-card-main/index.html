@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./index.css">
 
@@ -34,15 +36,57 @@
   Do you provide additional support?
   Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
 
-  <div class="attribution">
-
+  <main class="attribution">
     <div class="container">
-      <img class="womanImage" src="./images/illustration-woman-online-desktop.svg"/>
+      <div class="womanFigureContainer">
+        <img id="womanImageLines" src="./images/bg-pattern-desktop.svg"/>
+        <img id="womanImage" src="./images/illustration-woman-online-desktop.svg"/>
+      </div>
+      <img id="boxImage" src="./images/illustration-box-desktop.svg">
+      <div class="faqSection"> 
+        <h1 id="faqHeader">FAQ</h1>
+        
+        <div id="questionsAndAnswers">
+
+          <!-- Question 1 -->
+          <div class="question">
+            <h3>How many team members can I invite?</h3>
+            <img src="./images/icon-arrow-down.svg"/>
+          </div>
+          <div class="answer"></div>
+          <!-- Question 2 -->
+          <div class="question">
+            <h3>What is the maximum file upload size?</h3>
+            <img src="./images/icon-arrow-down.svg"/>
+          </div>
+          <div class="answer"></div>
+          <!-- Question 3 -->
+          <div class="question">
+            <h3>How do I reset my password?</h3>
+            <img src="./images/icon-arrow-down.svg"/>
+          </div>
+          <div class="answer"></div>
+          <!-- Question 4 -->
+          <div class="question">
+            <h3>Can I cancel my subscription?</h3>
+            <img src="./images/icon-arrow-down.svg"/>
+          </div>
+          <div class="answer"></div>
+          <!-- Question 5 -->
+          <div class="question">
+            <h3>Do you provide additional support?</h3>
+            <img src="./images/icon-arrow-down.svg"/>
+          </div>
+          <div class="answer"></div>
+
+        </div>
+
+      </div>
     </div>
     <!-- <footer>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mohamed Baher</a>.
     </footer> -->
-  </div>
+  </main>
 </body>
 </html>

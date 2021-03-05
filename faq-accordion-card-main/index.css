@@ -1,6 +1,12 @@
 body{
     background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)) ;
     height:100vh;
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+}
+
+h1{
+    font-size: xx-large;
 }
 
 .attribution{
@@ -12,16 +18,52 @@ body{
 
 .container{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    height:60%;
-    width:50%;
-    border-radius: 5px;
-    overflow: hidden;
+    height:80%;
+    width:70%;
+    border-radius: 40px;
+    z-index: 4;
 }
 
-.womanImage{
-    width: 400px;
+.womanFigureContainer{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+
+#womanImageLines{
+    width:400px;
+    z-index: 5;
     left:-3rem;
+    bottom: 1rem;
     position: relative;
     object-fit: contain;
+}
+
+#womanImage{
+    width: 400px;
+    left:-28rem;
+    bottom: 1rem;
+    z-index: 6;
+    position: relative;
+    object-fit: contain;
+}
+
+#boxImage{
+    width:150px;
+    position: relative;
+    z-index: 7;
+    object-fit: contain;
+}
+
+.faqSection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:60%;
+    position: absolute;
+    top:8rem;
 }
