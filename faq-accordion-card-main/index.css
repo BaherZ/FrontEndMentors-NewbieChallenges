@@ -32,6 +32,7 @@ h1{
     display: flex;
     align-items: center;
     height:100%;
+    width:100%;
 }
 
 #womanImageLines{
@@ -54,9 +55,12 @@ h1{
 
 #boxImage{
     width:150px;
-    position: relative;
+    position: absolute;
     z-index: 7;
     object-fit: contain;
+    margin:0;
+    padding:0;
+    left:7.5rem
 }
 
 .faqSection{
@@ -66,4 +70,13 @@ h1{
     width:60%;
     position: absolute;
     top:8rem;
+}
+
+.question h3{
+    font-size: 300;
+}
+
+#questionsAndAnswers{
+    display: flex;
+    flex-direction: column;
 }
