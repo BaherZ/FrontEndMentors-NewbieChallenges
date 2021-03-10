@@ -89,6 +89,10 @@ h1{
     overflow: hidden;
 }
 
+.active{
+    display: block;
+}
+
 #questionsAndAnswers{
     display: flex;
     flex-direction: column;

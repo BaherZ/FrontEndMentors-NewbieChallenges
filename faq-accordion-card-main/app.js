@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
     
     for(let question of questions){
         question.addEventListener("click",()=>{
-            const answer = this.nextElementSibling;
-            console.log(question)
-            const currentDisplay = answer.style.display
-            if(currentDisplay=='none'){
-                answer.style.display = 'block'
+            // console.log(question)
+            const answer = question.nextElementSibling;
+            const isActive = answer.classList.contains('active')
+            if(!isActive){
+                answer.classList.add('active')
             }
             else{
-                answer.style.display = 'none'
+                answer.classList.remove('active')
             }
         })
     }
