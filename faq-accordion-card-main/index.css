@@ -71,13 +71,24 @@ h1{
     top:8rem;
 }
 
+.details{
+    border-bottom: 1px solid #e7e7e9;
+
+}
+
 .question{
     display: flex;
     cursor: pointer;
+    color:#99989D;
+}
+
+.question:hover{
+    color:black
 }
 
 .question img{
     object-fit: contain;
+    margin-left:20px;
 }
 
 .question h3{
@@ -87,9 +98,18 @@ h1{
 .answer{
     display: none;
     overflow: hidden;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    color: #99989D;
+    padding: 5px;
+    text-align: left;
 }
 
-.active{
+.questionActive{
+    color:black
+}
+
+.answerActive{
     display: block;
 }
 

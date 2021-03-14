@@ -6,12 +6,23 @@ document.addEventListener("DOMContentLoaded", function(e) {
         question.addEventListener("click",()=>{
             // console.log(question)
             const answer = question.nextElementSibling;
-            const isActive = answer.classList.contains('active')
-            if(!isActive){
-                answer.classList.add('active')
+            const answerIsActive = answer.classList.contains('active')
+            const questionIsActive = question.classList.contains('active')
+
+            
+            if(!questionIsActive){
+                question.classList.add('questionActive')
             }
             else{
-                answer.classList.remove('active')
+                
+                question.classList.remove('questionActive')
+            }
+
+            if(!answerIsActive){
+                answer.classList.add('answerActive')
+            }
+            else{
+                answer.classList.remove('answerActive')
             }
         })
     }
