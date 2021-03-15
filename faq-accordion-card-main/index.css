@@ -35,17 +35,17 @@ h1{
 }
 
 #womanImageLines{
-    width:400px;
+    width:90%;
     z-index: 5;
-    left:-3rem;
+    right:10%;
     bottom: 1rem;
     position: relative;
     object-fit: contain;
 }
 
 #womanImage{
-    width: 400px;
-    left:-28rem;
+    width: 90%;
+    right:100%;
     bottom: 1rem;
     z-index: 6;
     position: relative;
@@ -53,13 +53,13 @@ h1{
 }
 
 #boxImage{
-    width:150px;
+    width:10%;
     position: absolute;
     z-index: 7;
     object-fit: contain;
     margin:0;
     padding:0;
-    left:7.5rem
+    left:10%
 }
 
 .faqSection{
@@ -122,32 +122,45 @@ h1{
    
     .container{
         flex-direction: column;
-        height:90%;
-        width: 400px;
+        height:100%;
+        width: 90%;
+        margin-top:50%;
     }
-    .faqSection{
-        width:80%;
-    }
+    
     .womanFigureContainer{
         overflow: visible;
         height:50%;
         justify-content: center;
+        width:100%;
+        margin-bottom: -25px;
     }
+    
     #womanImage{
-        width:200px;
-        left:0;
+        width:50%;
+        left:-25%;
+        top:-60%;
         object-fit: contain;
     } 
+    #womanImageLines{
+        width: 50%;
+        left: 25%;
+        top:-60%;
+    }
+    
+    #boxImage{
+        width:22%;
+        left:20%;
+        top:5vh;
+    }
+
+    .faqSection{
+        width:100%;
+        align-items: center;
+    }
+
     #faqHeader{
         width:100%;
         align-items: center;
         justify-content: center;
-    }
-    #womanImageLines{
-        /* width: 200px; */
-        display: none;
-    }
-    #boxImage{
-        width:75px;
     }
 }
