@@ -1,0 +1,48 @@
+body{
+    margin: 5% 5% 0 5%;
+}
+
+h1{
+    color:#512150;
+    font-weight: 700;
+}
+.description{
+
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;   
+    width:50%;
+}
+
+.review_card{
+    background-color: #F7F2F8;
+    padding:5px;
+    display: flex;
+    margin: 3px;
+    color:#512150;
+    border-radius: 10px;
+}
+
+.review_card p{
+    margin-left:20px;
+    font-size: 0.9rem;
+    font-family: 'Spartan';
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.upperSection{
+    display: flex;
+}
+.upperSectionText{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    font-family: 'Spartan';
+}
