@@ -3,11 +3,18 @@ body{
 }
 
 h1{
-    color:#512150;
+    color:hsl(300, 43%, 22%);
     font-weight: 700;
 }
-.description{
 
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.description{
+    color:hsl(303, 10%, 53%)
 }
 
 .reviews{
@@ -21,7 +28,7 @@ h1{
     padding:5px;
     display: flex;
     margin: 3px;
-    color:#512150;
+    color:hsl(300, 43%, 22%);
     border-radius: 10px;
 }
 
@@ -32,17 +39,37 @@ h1{
     font-weight: 700;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-}
 
 .upperSection{
     display: flex;
+    height: 100%;
 }
+
 .upperSectionText{
     display: flex;
     flex-direction: column;
     width:40%;
     font-family: 'Spartan';
+}
+
+.bottomSection{
+    display: flex;
+    height:100%;
+}
+.card{
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.user{
+    display: flex;
+}
+
+.user_image{
+    border-radius: 50%;
+    width: 12%;
+    object-fit: contain;
+    margin:10%;
 }
