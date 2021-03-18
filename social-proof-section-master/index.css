@@ -1,5 +1,11 @@
+html{
+    font-size: 1rem;
+    font-family: 'Spartan';
+    font-weight: 400;
+}
+
 body{
-    margin: 5% 5% 0 5%;
+    margin: 5% 7.5% 0 7.5%;
 }
 
 h1{
@@ -35,7 +41,6 @@ h1{
 .review_card p{
     margin-left:20px;
     font-size: 0.9rem;
-    font-family: 'Spartan';
     font-weight: 700;
 }
 
@@ -49,11 +54,11 @@ h1{
     display: flex;
     flex-direction: column;
     width:40%;
-    font-family: 'Spartan';
 }
 
 .bottomSection{
     display: flex;
+    justify-content: space-between;
     height:100%;
 }
 .card{
@@ -65,11 +70,36 @@ h1{
 
 .user{
     display: flex;
+    margin:10% 10% 5% 10%;
+    font-size: 0.85rem;
+}
+
+.user_info{
+    margin-left:20px;
+}
+
+.user_name{
+    margin:0;
+    color:white;
+    font-weight: 700;
+}
+.verification{
+    margin:0;
+    color:#eecaf5
 }
 
 .user_image{
     border-radius: 50%;
-    width: 12%;
-    object-fit: contain;
-    margin:10%;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial{
+    font-size: 0.7rem;
+    margin: 0% 10% 10% 10%;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.testimonial p{
+    margin-bottom: 15px;
 }
