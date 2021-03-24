@@ -14,6 +14,10 @@ h1{
     font-size: 2.75rem;
 }
 
+.desktop_top{
+    z-index: -999;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -54,7 +58,7 @@ h1{
 }
 
 .second_review{
-    margin-right:12.5%;
+    margin-right:12.5%; 
 }
 
 
@@ -125,3 +129,26 @@ h1{
 .testimonial p{
     margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .upperSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .upperSectionText{
+        width:100%
+    }
+
+
+    h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .description{
+        text-align: center;
+    }
+    
+  }
