@@ -21,7 +21,7 @@ h1{
 .container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 .description{
@@ -64,8 +64,8 @@ h1{
 
 .upperSection{
     display: flex;
-    height: 100%;
     width: 100%;
+    height:50%;
 }
 
 .upperSectionText{
@@ -77,11 +77,11 @@ h1{
 .bottomSection{
     display: flex;
     justify-content: space-between;
-    height:100%;
+    height:50%
 }
 .card{
     width: 30%;
-    height: 60%;
+    height:200px;
     border-radius: 10px;
     background-color: hsl(300, 43%, 22%);
 }
@@ -131,6 +131,10 @@ h1{
 }
 
 @media only screen and (max-width: 600px) {
+
+    .container{
+        /* flex-wrap: wrap; */
+    }
     .upperSection {
       display: flex;
       flex-direction: column;
@@ -141,6 +145,11 @@ h1{
         width:100%
     }
 
+    .bottomSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1{
         font-size: 1.7rem;
@@ -174,5 +183,19 @@ h1{
     .second_review{
         margin-right: 0%;
     }
+
+
+    .card{
+        width:100%;
+        height:100%;
+        margin:10px;
+    }
+
+    .card2{
+        margin-top:0px;
+    }
     
+    .card3{
+        margin-top:0px;
+    }
   }
