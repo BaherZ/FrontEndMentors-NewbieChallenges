@@ -150,5 +150,29 @@ h1{
     .description{
         text-align: center;
     }
+
+    .reviews{
+        justify-content: center;
+    }
+
+    .review_card{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review_card p{
+        padding: 0;
+        margin: 8px;
+    }
+
+    .first_review{
+        margin-right:0%
+    }
+
+    .second_review{
+        margin-right: 0%;
+    }
     
   }
