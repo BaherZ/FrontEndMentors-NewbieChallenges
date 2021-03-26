@@ -127,7 +127,7 @@ pre{
       flex-direction: column;
     }
     body{
-        overflow-x:hidden
+        overflow-y:scroll;
     }
     .headers p:nth-child(3){
         width:80%;
