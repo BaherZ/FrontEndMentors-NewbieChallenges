@@ -1,7 +1,7 @@
 html{
     background-color: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 15px;
     height:100%;
     width:100%;
 }
@@ -60,7 +60,6 @@ pre{
 
 .cards{
     width: 80%;
-    /* height:75%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +68,7 @@ pre{
 .column{
     display: flex;
     flex-direction: column;
-    width:20em;
+    width:21em;
 }
 
 .card{
@@ -81,16 +80,28 @@ pre{
 }
 
 .card-data{
-    margin:1em;
+    margin:1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card-data h3{
     color: hsl(234, 12%, 34%);
+    padding: 0;
+    margin: 0;
 }
 
 .card-data p{
     color: hsl(229, 6%, 66%);
     font-size: 0.8em;
+    padding: 0;
+}
+
+.card-data img{
+    width:3em;
+    align-self: flex-end;
+    margin-top: 10px;
 }
 
 .card1{
@@ -99,7 +110,6 @@ pre{
 
 .card2{
     border-top: hsl(0, 78%, 62%) 5px solid;
-    /* margin-bottom: 2em; */
 }
 
 .card3{
@@ -110,6 +120,3 @@ pre{
     border-top: hsl(212, 86%, 64%) 5px solid;
 }
 
-.middle{
-    /* margin:10em; */
-}
