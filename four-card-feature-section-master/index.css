@@ -62,7 +62,7 @@ pre{
     width: 80%;
     /* height:75%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -74,7 +74,8 @@ pre{
 
 .card{
     background-color: white;
-    height:15rem;
+    height:12.5rem;
+    margin:1rem;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -98,6 +99,7 @@ pre{
 
 .card2{
     border-top: hsl(0, 78%, 62%) 5px solid;
+    /* margin-bottom: 2em; */
 }
 
 .card3{
@@ -106,4 +108,8 @@ pre{
 
 .card4{
     border-top: hsl(212, 86%, 64%) 5px solid;
+}
+
+.middle{
+    /* margin:10em; */
 }
