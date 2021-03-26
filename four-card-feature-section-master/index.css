@@ -10,6 +10,7 @@ body{
     height:100%;
     width:100%;
     overflow: hidden;
+    margin-top: 2em;
 }
 
 h3{
@@ -123,13 +124,24 @@ pre{
 }
 
 @media only screen and (max-width: 600px) {
+    html, body{
+        overflow-x: hidden;
+        overflow-y:scroll;
+    }
     .cards {
       flex-direction: column;
     }
-    body{
-        overflow-y:scroll;
+
+    .headers h1{
+       font-size: 1.5rem;
     }
+
+    .headers p:nth-child(2){
+        font-size: 1.5rem;
+    }
+
     .headers p:nth-child(3){
+        font-size: 1rem;
         width:80%;
     }
     
