@@ -14,10 +14,11 @@ button{
     color:white;
     background-color: hsl(71, 73%, 54%);
     padding:1em;
-    padding-left: 4em;
-    padding-right: 4em;
+    width:80%;
+    font-weight: 700;
     border-radius: 5px;
-    border:0
+    border:0;
+    margin-top:1em;
 }
 
 .container{
@@ -30,7 +31,7 @@ button{
 
 .card{
     width:60%;
-    height:80%;
+    height:75%;
 }
 
 .upper-section{
@@ -73,12 +74,18 @@ button{
 
 .subscription-section span{
     font-weight: 700;
+    font-size:2rem;
 }
 
 .why-us-section{
-    background-color: hsl(179, 60%, 50%);
+    background-color: hsl(179, 61%, 46%);
     width:50%;
     padding: 1em;
     padding-left:3em
+}
+
+.why-us-section p{
+    padding:0;
+    margin: 0.35em;
 }
 
