@@ -1,0 +1,58 @@
+
+html{
+    font-family: 'Karla';
+    font-size: 1rem;
+    background-color: hsl(204, 43%, 93%);
+}
+
+button{
+    color:white;
+    background-color: hsl(71, 73%, 54%);
+    padding:1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 5px;
+    border:0
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    width:80%;
+    height:80%;
+}
+
+.upper-section{
+    background-color: white;
+    width:100%;
+}
+
+.upper-section h3{
+    color:hsl(71, 73%, 54%)
+}
+
+.upper-section p{
+    color:hsl(218, 22%, 67%)
+}
+
+.lower-section{
+    color:white;
+    display: flex;
+    flex-direction: row;
+}
+.subscription-section{
+    background-color: hsl(179, 62%, 43%);
+    width:50%;
+}
+
+.subscription-section span{
+    font-weight: 700;
+}
+
+.why-us-section{
+    background-color: hsl(179, 60%, 50%);
+    width:50%;
+}
+
