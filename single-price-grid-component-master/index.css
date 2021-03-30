@@ -2,6 +2,7 @@
 html{
     font-family: 'Karla';
     font-size: 1rem;
+    font-weight: 400;
     background-color: hsl(204, 43%, 93%);
     height: 100%;
 }
@@ -24,6 +25,22 @@ button{
 
 h1{
     color:hsl(179, 61%, 46%)
+}
+
+.margin-zero{
+    margin:0
+}
+
+.padding-zero{
+    padding:0
+}
+
+.margin-bottom-zero{
+    margin-bottom:0
+}
+
+.margin-bottom-one{
+    margin-bottom: 1em;
 }
 
 .container{
@@ -50,11 +67,6 @@ h1{
     padding-left: 3em;
 }
 
-.upper-section h1{
-    padding: 0;
-    margin:0;
-}
-
 .upper-section h3{
     color:hsl(71, 73%, 54%);
 }
@@ -73,19 +85,15 @@ h1{
 .subscription-section{
     background-color: hsl(179, 62%, 43%);
     width:50%;
-    padding:1em;
-    padding-left: 3em;
     display: flex;
     flex-direction: column;
 }
 
-.subscription-section h3{
-    margin-bottom: 0;
+.subscription-section-content{
+    padding:1em;
+    padding-left: 3em;
 }
 
-.subscription-section p:nth-child(2){
-    margin-bottom: 0;
-}
 .subscription-section p:nth-child(3){
     font-size: 1rem;
     font-weight: 400;
@@ -103,20 +111,44 @@ h1{
 .why-us-section{
     background-color: hsl(179, 61%, 46%);
     width:50%;
-    padding: 1em;
-    padding-left:3em;
     display:flex;
     flex-direction: column;
 }
 
-.why-us-section h3{
-    padding:0;
-    margin-bottom: 1em;
-}
-
 .why-us-section p{
-    padding:0;
     font-size:0.9rem;
     margin: 0.2em;
 }
 
+.why-us-section-content{
+    padding: 1em;
+    padding-left:3em;
+}
+
+@media only screen and (max-width: 600px){
+
+    .card{
+        width:100%
+    }
+
+    .upper-section{
+        width:100%;
+        height:50%
+    }
+    
+    .lower-section{
+        flex-direction: column;
+        width:100%;
+        height:50%
+    }
+    .why-us-section{
+        width:100%;
+        padding:0;
+    }
+
+    .subscription-section{
+        width:100%;
+        margin:0;
+        padding: 0;
+    }
+}
