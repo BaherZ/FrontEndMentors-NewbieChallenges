@@ -6,11 +6,34 @@ body{
     background-color:hsl(257, 40%, 49%);
     color:white;
     font-weight: 400;
+    font-size: 1rem;
+}
+
+header{
+    display: block;
+}
+
+.container{
+    width:100%;
+    /* margin:2em; */
 }
 
 .image-and-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-and-content img{
+    width: 40%;
+    object-fit: contain;
+}
+
+.content{
+    width:30%;
+    padding:2em;
 }
 
 .content h1{
@@ -20,4 +43,5 @@ body{
 
 .content p{
     font-family: 'Open Sans';
+    font-size: 0.85rem;
 }
