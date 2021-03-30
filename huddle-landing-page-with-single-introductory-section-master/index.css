@@ -1,0 +1,23 @@
+html{
+    height:100%;
+}
+
+body{
+    background-color:hsl(257, 40%, 49%);
+    color:white;
+    font-weight: 400;
+}
+
+.image-and-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.content p{
+    font-family: 'Open Sans';
+}
