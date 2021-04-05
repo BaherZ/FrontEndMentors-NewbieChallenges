@@ -2,6 +2,7 @@ html{
     font-family: 'Josefin Sans';
     font-weight: 300;
     font-size:1rem;
+    background-image: url('./images/bg-pattern-desktop.svg');
 }
 
 body{
@@ -17,6 +18,7 @@ h1{
 
 .we-are{
     color: hsl(0, 36%, 70%);
+    font-weight: 300;
 }
 
 .gray{
@@ -66,7 +68,7 @@ h1{
 
 ::placeholder{
     color:hsl(0, 36%, 70%);
-    opacity: 1; /*for firefox*/
+    opacity: 0.7; /*for firefox*/
 }
 
 .input{
@@ -95,6 +97,7 @@ h1{
     width:100%;
     border-radius: 25px;
     border: 1px solid hsl(0, 36%, 70%);
+    opacity: 0.5;
     /* border-right: none; */
 }
 
