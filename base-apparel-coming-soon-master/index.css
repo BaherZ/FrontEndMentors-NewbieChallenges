@@ -12,7 +12,7 @@ body{
 
 h1{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.75rem;
 }
 
@@ -68,7 +68,7 @@ h1{
 
 ::placeholder{
     color:hsl(0, 36%, 70%);
-    opacity: 0.7; /*for firefox*/
+    opacity: 1; /*for firefox*/
 }
 
 .input{
@@ -78,7 +78,7 @@ h1{
     position: relative;
 }
 
-.submit{
+#submit{
     position: absolute;
     padding:0.5em;
     outline: none;
@@ -91,7 +91,20 @@ h1{
     font-size: 1.5rem;
 }
 
-.email{
+#error-icon{
+    position: absolute;
+    align-self: center;
+    display: none;
+    right:6em
+}
+
+#error-label{
+    color:hsl(0, 93%, 68%);
+    display: none;
+    /* align-self: flex-start; */
+}
+
+#email{
     flex:1;
     align-self: flex-start;
     padding:1.3em;
@@ -102,6 +115,6 @@ h1{
     /* border-right: none; */
 }
 
-.email:focus{
+#email:focus{
     outline: none;
 }

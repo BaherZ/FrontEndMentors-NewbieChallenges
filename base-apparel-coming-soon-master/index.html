@@ -31,15 +31,17 @@
               below to stay up-to-date with announcements and our launch deals
             </p>
           </div>
-          <div class="input">
-            <input class="email" placeholder="Email Address" type="email"/>
-            <button class="submit"> <img src="./images/icon-arrow.svg"/> </button>
-          </div>
+          <form class="input">
+            <input id="email" placeholder="Email Address" type="email"/>
+            <button id="submit" type="submit"> <img src="./images/icon-arrow.svg"/> </button>
+            <img id="error-icon" src="./images/icon-error.svg"/>
+          </form>
+          <label id="error-label">Email is not valid</label>
         </div>
       </div>
 
       <img class="content-image" src="./images/hero-desktop.jpg"/>
   </div>
-
+  <script src="./index.js"></script>
 </body>
 </html>
