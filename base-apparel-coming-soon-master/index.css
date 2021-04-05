@@ -9,6 +9,20 @@ body{
     margin:0
 }
 
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.75rem;
+}
+
+.we-are{
+    color: hsl(0, 36%, 70%);
+}
+
+.gray{
+    color:hsl(0, 6%, 24%)
+}
+
 .container{
     display: flex;
     height:100%;
@@ -27,7 +41,7 @@ body{
 }
 
 .content-and-logo{
-    width:50%;
+    width:54%;
     height:100%;
     display: flex;
     flex-direction: column;
@@ -38,6 +52,10 @@ body{
     margin-top: 4em;
 }
 
+.content p{
+    color: hsl(0, 36%, 70%);
+}
+
 .logo-image{
     width:33%;
     object-fit: contain;
@@ -45,6 +63,41 @@ body{
     margin-top: 1em;
 }
 
+
+::placeholder{
+    color:hsl(0, 36%, 70%);
+    opacity: 1; /*for firefox*/
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    position: relative;
+}
+
+.submit{
+    position: absolute;
+    padding:0.5em;
+    right:0;
+    width:25%;
+    border-radius: 25px;
+    background: linear-gradient(to right,hsl(0, 38%, 68%),hsl(0, 93%, 68%));
+    border:0;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .email{
+    flex:1;
     align-self: flex-start;
+    padding:1.3em;
+    width:100%;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 36%, 70%);
+    /* border-right: none; */
+}
+
+.email:focus{
+    outline: none;
 }
