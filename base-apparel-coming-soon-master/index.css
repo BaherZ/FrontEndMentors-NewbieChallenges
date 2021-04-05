@@ -81,10 +81,11 @@ h1{
 .submit{
     position: absolute;
     padding:0.5em;
+    outline: none;
     right:0;
     width:25%;
     border-radius: 25px;
-    background: linear-gradient(to right,hsl(0, 38%, 68%),hsl(0, 93%, 68%));
+    background:  linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border:0;
     color: white;
     font-size: 1.5rem;
