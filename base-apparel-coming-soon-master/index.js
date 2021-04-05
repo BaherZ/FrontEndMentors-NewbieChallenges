@@ -18,6 +18,7 @@ submitButton.addEventListener('click',(e)=>{
     console.log(emailIsValid)
     if(!emailIsValid){
         errorLabel.style.display = "initial"
+        errorLabel.style.marginTop="0.5em"
         errorIcon.style.display = "initial"
         email.style.border = "2px solid hsl(0, 93%, 68%)"
     }else{
