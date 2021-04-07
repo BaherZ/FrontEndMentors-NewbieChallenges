@@ -152,6 +152,7 @@ h2{
 
     .logo-image{
         position: absolute;
-        top:0
+        top:0;
+        margin:1em;
     }
   }
