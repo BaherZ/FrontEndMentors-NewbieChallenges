@@ -10,10 +10,11 @@ body{
     margin:0
 }
 
-h1{
+h2{
     font-weight: 600;
     font-size: 4rem;
     letter-spacing: 0.75rem;
+    margin:0.4em;
 }
 
 .we-are{
@@ -57,6 +58,7 @@ h1{
 .content p{
     color: hsl(0, 36%, 70%);
 }
+
 
 .logo-image{
     width:33%;
@@ -118,3 +120,38 @@ h1{
 #email:focus{
     outline: none;
 }
+
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .container{
+        flex-direction: column-reverse;
+        width:100%;
+    }
+
+    .content-image{
+        margin-top: 4em;
+    }
+
+    .input{
+        width: 90%;
+    }
+
+    .content{
+        width:80%;
+        text-align: center;
+    }
+
+    .content-and-logo{
+        width: 100%;
+    }
+
+    .logo-image{
+        position: absolute;
+        top:0
+    }
+  }
