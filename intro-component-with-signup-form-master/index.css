@@ -118,7 +118,8 @@ form{
 }
 
 .terms span{
-    color:hsl(0, 84%, 63%) 
+    color:hsl(0, 84%, 63%);
+    cursor: pointer;
 }
 
 .submit{
@@ -134,3 +135,23 @@ form{
     cursor: pointer;
 }
 
+@media screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content{
+        width:100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .formContainer{
+        width:100%;
+    }
+    .formContainer h2{
+        font-size:1.25em;
+        width:90%;
+    }
+
+}
