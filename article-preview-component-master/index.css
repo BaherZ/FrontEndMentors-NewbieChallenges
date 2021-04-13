@@ -142,6 +142,7 @@ body{
 
 #tooltip .socialMedia-links img{
     margin-left: 1em;
+    cursor: pointer;
 }
 
 
