@@ -1,58 +1,53 @@
-html{
+*{
     font-family: 'Manrope';
     font-size: 0.9rem;
-    background-color: hsl(210, 46%, 95%);
-    height:100%;
 }
+
 
 body{
-    height:100%;
+    height:100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100%;
-}
 
 .container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height:35%;
     width:50%;
+    min-height: 35%;
     background-color: white;
+    border-radius: 10px;
 }
 
-.drawers-container{
-    height:100%;
-}
 
 #drawers{
-    width:100%;
-    height:100%;
+    width:40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    margin-left:1em;
+    width:90%;
     height:100%;
 }
 
-.content-data{
-    width:90%;
-}
-
-.content-data h2{
+.heading{
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 1.3rem;
 }
 
-.content-data p{
+.subtext{
     padding:0;
     margin:0;
     margin-top:0.5em;
@@ -64,9 +59,9 @@ main{
 .meta{
     display: flex;
     flex-direction: row;
-    margin-top:1em;
     justify-content: space-between;
     align-items: center;
+    height:30%;
 }
 
 .avatar-meta{
@@ -84,6 +79,11 @@ main{
 .avatar-info p{
     margin:0;
     padding: 0;
+    color:hsl(212, 23%, 69%);
+}
+
+.avatar-info span{
+    color:black
 }
 
 #avatar-image{
@@ -92,11 +92,23 @@ main{
     height:3em;
 }
 
+.button{
+    border:0;
+    border-radius: 50%;
+    width:2em;
+    height:2em;
+    margin-right:1em;
+}
+
 #share{
-    width:1em;
-    height:1em;
+    width:10em;
+    height:10em;
     padding:0.5em;
-    background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
     object-fit: contain;
+    background-image: url("./images/icon-share.svg");
+    /* background-image: url('./images/icon-share.svg'); */
+    background-color: hsl(210, 46%, 95%);
 }
+
+
