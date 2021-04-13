@@ -1,4 +1,4 @@
-const toolTipButton = document.getElementById('button')
+const toolTipButton = document.querySelector('button')
 console.log(toolTipButton)
 
 const tooltip = document.getElementById('tooltip')
