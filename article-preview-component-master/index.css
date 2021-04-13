@@ -15,8 +15,9 @@ body{
 
 .container{
     display: flex;
-    width:50%;
-    min-height: 35%;
+    width:55%;
+    min-width:50%;
+    min-height: 45%;
     background-color: white;
     border-radius: 10px;
 }
@@ -24,6 +25,8 @@ body{
 
 #drawers{
     width:40%;
+    /* object-fit: contain;
+    height:100%; */
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -33,7 +36,8 @@ body{
     justify-content: center;
     align-items: center;
     width:60%;
-    
+    position: relative;
+    margin: 1em;;
 }
 
 .content{
@@ -45,12 +49,13 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 1.3rem;
+    color:hsl(217, 19%, 35%)
 }
 
 .subtext{
     padding:0;
     margin:0;
-    margin-top:0.5em;
+    margin-top:1em;
     font-weight:500;
     font-size:0.85rem;
     color:hsl(212, 23%, 69%);
@@ -61,7 +66,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height:30%;
+    height:40%;
+    margin-top:1em;
 }
 
 .avatar-meta{
@@ -83,7 +89,8 @@ body{
 }
 
 .avatar-info span{
-    color:black
+    color:hsl(217, 19%, 35%);
+    font-weight: 700;
 }
 
 #avatar-image{
@@ -98,17 +105,44 @@ body{
     width:2em;
     height:2em;
     margin-right:1em;
-}
-
-#share{
-    width:10em;
-    height:10em;
-    padding:0.5em;
-    border-radius: 50%;
-    object-fit: contain;
-    background-image: url("./images/icon-share.svg");
-    /* background-image: url('./images/icon-share.svg'); */
+    cursor: pointer;
+    outline: none;
     background-color: hsl(210, 46%, 95%);
 }
+
+.tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    padding:0.75em;
+    width:15em;
+    border-radius: 10px;
+    top:57%;
+    left: 60%;
+}
+
+.tooltip ::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  }
+
+
+.tooltip span{
+    color:hsl(214, 17%, 51%)
+}
+
+.tooltip .socialMedia-links img{
+    margin-left: 1em;
+}
+
 
 
