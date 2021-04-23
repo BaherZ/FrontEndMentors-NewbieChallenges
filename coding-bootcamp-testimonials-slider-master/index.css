@@ -6,8 +6,8 @@ body{
     height:100vh;
     overflow: hidden;
     background-image: url("./images/pattern-bg.svg"), url("./images/pattern-curve.svg"), url("./images/pattern-quotes.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% right 10%, bottom left, bottom 70% left 20%;
+    background-repeat: no-repeat;
+    background-position: top 50% right 10%, bottom left, bottom 70% left 20%;
 }
 
 .container{
@@ -87,3 +87,45 @@ body{
     font-weight: 700;
     color:hsl(240, 38%, 20%)
 }
+
+
+@media only screen and (max-width: 720px) {
+    body {
+        background-position: top 4.5% center, bottom left, center top 55%;
+        background-size: 22rem, 31.25rem, 6.25rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .image-and-buttons{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+    }
+    
+    .image{
+        margin:0 auto;
+        height:95%;
+    }
+
+    .buttons-container{
+        left:40%;
+        bottom:-1%;
+    }
+
+    .content{
+        margin-top:2em;
+        width:100%;
+        flex-direction: column;
+    }
+    .main-text{
+        font-size: 1.25rem;
+        margin:0 auto;
+        text-align: center;
+        width:90%;
+        position: static;
+    }
+    
+  }
